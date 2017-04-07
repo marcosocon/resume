@@ -3,6 +3,7 @@ html
 	head
 		title Some Cool Title
 		link(rel='stylesheet', href='/styles/main.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat:400,700', type='text/css')
 		script(type='text/javascript', src='/scripts/vendor.js')
 		script(type='text/javascript', src='/scripts/scripts.js')
 	body
@@ -14,40 +15,43 @@ html
 					h1 Marcos Ocón
 					h2.role Frontend Developer
 					h2.country Tucumán, Argentina
-				.cells
-					.cell 
-						span 
-							strong 20 Y/O
-					.cell
-						span
-							strong 3+ Y/Experience
-					.cell
-						span
-							strong 10+ Projects Delivered
-				ul
-					li
-						a(href='#aboutme') About Me
-					li
-						a(href='#education') Education
-					li
-						a(href='#work') Work Experience
-					li
-						a(href='#skills') Skills
-				footer
-					strong Interested in working with me?
-					p	Awesome! I'm available for full-time or remote opportunities
-						br
-						|Get in touch:
-					ul
-						li
-							a(href='mailto:oconmarcos97@gmail.com')
-							strong oconmarcos97@gmail.com
-						li
-							a(href='https://github.com/marcosocon', target='blank')
-							strong github.com/marcosocon
-						li
-							a(href='https://ar.linkedin.com/in/marcosgonzalezocon', target='blank')
-							strong ar.linkedin.com/in/marcosgonzalezocon
+					.cells
+						.cell 
+							span 
+								strong 20
+								br
+								|Y/O
+						.cell
+							span
+								strong 3+ 
+								br
+								|Y/Experience
+						.cell
+							span
+								strong 10+
+								br
+								|Projects Delivered
+				.lower-section
+					ul.links
+						li #[a.aboutme(href='#aboutme') About Me]
+						li #[a.education(href='#education') Education]
+						li #[a.work(href='#work') Work Experience]
+						li #[a.skills(href='#skills') Skills]
+					footer.footer
+						strong Interested in working with me?
+						p	Awesome! I'm available for full-time or remote opportunities
+							br
+							|Get in touch:
+						ul
+							li
+								a(href='mailto:oconmarcos97@gmail.com')
+								strong oconmarcos97@gmail.com
+							li
+								a(href='https://github.com/marcosocon', target='blank')
+								strong github.com/marcosocon
+							li
+								a(href='https://ar.linkedin.com/in/marcosgonzalezocon', target='blank')
+								strong ar.linkedin.com/in/marcosgonzalezocon
 			.main-content
 				h1#aboutme About Me
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae itaque labore id qui. Omnis vel odio possimus, deleniti. Nisi aliquam amet impedit suscipit ducimus autem fuga libero non voluptatibus fugiat.
