@@ -1,0 +1,46 @@
+.lower-section
+	background-color drawer-light
+
+	ul.links
+		margin 0
+		padding 0 
+		list-style none
+
+		li
+			cursor pointer
+			padding 20px
+			border border-setup
+
+			a
+				position relative
+				display inline-block
+				box-sizing border-box
+				width 100%
+				padding 1rem
+				padding-left "calc(%s + 4rem)" % drawer-space
+				padding-right 5px
+				color color-primary
+				font-size font-size-big
+				font-weight 700
+
+				&:before
+					content ""
+					position absolute
+					left drawer-space
+					top 0.9rem
+					width 2rem
+					height 2rem
+					background-repeat no-repeat
+					background-size contain
+
+				&.aboutme:before
+					background-image url("/images/aboutme.png")
+
+				&.education:before
+					background-image url("/images/education.png")
+
+				&.work:before
+					background-image url("/images/experience.png")
+
+				&.skills:before
+					background-image url("/images/skills.png")
