@@ -57,7 +57,7 @@ gulp.task('imagemin', function() {
 gulp.task('scripts', ['scripts:vendor', 'coffee', 'concat']);
 
 gulp.task('coffee', function () {
-	return gulp.src('src/scripts/**/*.coffee')
+	return gulp.src('src/scripts/*.coffee')
 		.pipe(coffee({ bare: true }).on('error', gulputil.log))
 		.pipe(gulp.dest('.tmp/src/scripts/'));
 });
