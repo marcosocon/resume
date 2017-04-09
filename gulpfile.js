@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 	postcss = require('gulp-postcss'),
 	imagemin = require('gulp-imagemin'),
 	lost = require('lost'),
+	rupture = require('rupture');
 	jade = require('gulp-jade'),
 	gulputil = require('gulp-util'),
 	ghPages = require('gulp-gh-pages'),
@@ -30,7 +31,7 @@ gulp.task('styles', function () {
 	return gulp.src('src/styles/main.styl')
 		.pipe(sourcemaps.init())
 		.pipe(stylus({
-			paths: ['node_modules'], import: ['nib'], use: nib()
+			paths: ['node_modules'], import: ['nib'], use: [nib(), rupture()]
 		}))
 		.pipe(postcss([
 			lost(),

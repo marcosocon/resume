@@ -33,6 +33,7 @@
     "jquery": "^3.2.1",
     "lost": "^8.0.0",
     "nib": "^1.1.2",
-    "poststylus": "^0.2.3"
+    "poststylus": "^0.2.3",
+    "rupture": "^0.6.2"
   }
 }

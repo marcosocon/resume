@@ -4,10 +4,14 @@
 	overflow hidden
 	lost-utility clearfix
 
+	+below(480px)
+		padding-bottom 250px
+		overflow scroll
+		height auto
 	&.hide-drawer
 		.drawer
-			overflow hidden
 			lost-column 0/12 12 0
+			overflow hidden
 		.main-content
 			lost-column 12/12 12 0
 
@@ -17,6 +21,11 @@
 	lost-column 4/12 12 0
 	height 100vh
 	overflow auto
+
+	+below(480px)
+		lost-column 1/1 1 0
+		overflow visible
+		height auto
 
 	.profile
 		background-color drawer-strong
@@ -89,16 +98,22 @@
 					border-right none
 
 .main-content
-	#menu
-		img
-			width 3rem
-			height 3rem
 	font-size font-size-big
 	lost-column 8/12 12 0
 	height 100vh
 	overflow auto
 	box-sizing border-box
 	padding 10px 5%
+
+	+below(480px)
+		lost-column 1/1 1 0
+		overflow visible
+		height auto
+
+	#menu
+		img
+			width 3rem
+			height 3rem
 
 	h2,h3
 		color color-secondary
@@ -166,4 +181,3 @@
 				background-image url('/images/check.png')
 				background-size contain
 				background-repeat no-repeat
-
