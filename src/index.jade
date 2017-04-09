@@ -10,114 +10,13 @@ html
 	body
 		.container
 			.drawer
-				.profile
-					.picture
-						img(src='images/profile.jpg')
-						img.countryflag(src='images/argflag.png')
-					h1 Marcos Ocón
-					h2.role Frontend Developer
-					h2.country Tucumán, Argentina
-					.cells
-						.cell 
-							span 
-								strong 20
-								br
-								|Y/O
-						.cell
-							span
-								strong 3+ 
-								br
-								|Y/Experience
-						.cell
-							span
-								strong 10+
-								br
-								|Projects Delivered
-				.lower-section
-					ul.links
-						li #[a.aboutme(href='#aboutme') About Me]
-						li #[a.education(href='#education') Education]
-						li #[a.work(href='#work') Work Experience]
-						li #[a.skills(href='#skills') Skills]
-				footer.footer
-					strong Interested in working with me?
-					p	Awesome! I'm available for full-time for remote opportunities
-						br
-						br
-						|Get in touch:
-					ul
-						li
-							a.mail(href='mailto:oconmarcos97@gmail.com')
-								strong oconmarcos97@gmail.com
-						li
-							a.github(href='https://github.com/marcosocon', target='blank')
-								strong github.com/marcosocon
-						li
-							a.linkedin(href='https://ar.linkedin.com/in/marcosgonzalezocon', target='blank')
-								strong linkedin.com/marcosgonzalezocon
+				include ./views/profile.jade
+				include ./views/nav.jade
+				include ./views/footer.jade
 			.main-content
-				a(href='#')#menu #[img(src='images/menu.png')]
-				h1#aboutme About Me
-				p Hey! I'm Marcos, a JavaScript Developer from Tucumán, Argentina, i love to code and learn new technologies, i spend most of my free time doing new courses and creating some repositories in github to practice them, i live with my brother in the middle of the city, he's also a developer so i live in a environment that has a lot of contact with the development industry.
-				p I like to practice Judo and Basketball and i enjoy hanging around with my friends, in the past few years i've been 100% involved in the frontend side of the development bringing clean and innovative solutions to common problems, i've worked with several clients located in the US and Europe.
-				ul.about-list
-					li I consider myself as a very proactive and curious person.
-					li I'm constantly looking for new technologies and languages to learn.
-					li I really believe that if you want something, you can have it!
-
-				h2 Languages I speak
-				.languages
-					img(src='images/spanish.png')
-					img(src='images/english.png')
-					img(src='images/french.png')
-
-				h2 Places I've been
-				.world-map
-					img(src='images/world.png')
-				.places
-					span.living Living and Working
-					span.visited Cultural Experience
-				h1#education Education
-				ul
-					li
-						h3 Universidad Tecnologica Nacional
-						p Systems Engineering
-					li
-						h3 Aticana
-						p English course
-				h1#work Work Experience
-				ul
-					li
-						h3 ITX Corp
-						p Frontend Developer
-						span Working with cool frontend technologies such as AngularJS, Angular Material, MomentJS, Lo-dash, Karma, Jasmine, bringing more that 90% of code coverage in all the projects, implementing features, bugfixing and introducing reusable components to the application.
-					li
-						h3 SweatWorks
-						p JavaScript Developer
-						span Working with all the MEAN Stack AngularJS at the frontend, MongoDB, Node and ExpressJS at the server level, working with Redis as a caching database, implementing features, bugfixing in both server and client side of the projects.
-					li
-						h3 LabzX
-						p Frontend Developer
-						span In charge of the whole client side of Pik, a social network for events where the events can connect with the providers and the invites can make suggestions, working in the client side, implementing AngularJS, HTML and CSS, also Vanilla for some graphics and custom effects.
-					li
-						h3 Viveo Group
-						p Frontend Developer
-						span Working with HTML, CSS, vanilla JavaScript and JQuery, in charge of the development on various projects, implementing new features, animations and increasing UX.
-					li
-						h3 BlackSmith La Fragua
-						p Frontend Developer
-						span In charge of the development of an application for the generation in real time of doors and gates with really good UX, implemeting AngularJS, JQuery and Jasmine as testing Framework.
-
-				h1#skills Skills
-				ul.skillset
-					li HTML
-					li CSS
-					li JavaScript
-					li AngularJS
-					li Angular 2
-					li Ionic
-					li NodeJS
-					li ExpressJS
-					li Gulp
-					li Grunt
-
+				include ./views/about.jade
+				include ./views/languages.jade
+				include ./views/map.jade
+				include ./views/education.jade
+				include ./views/work.jade
+				include ./views/skills.jade
