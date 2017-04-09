@@ -1,3 +1,3 @@
 $ ->
 	$('#menu').on "click", ->
-		console.log('click on menu, should close drawer')
+		$('.container').toggleClass('hide-drawer')

@@ -4,9 +4,16 @@
 	overflow hidden
 	lost-utility clearfix
 
+	&.hide-drawer
+		.drawer
+			overflow hidden
+			lost-column 0/12 12 0
+		.main-content
+			lost-column 12/12 12 0
 
 .drawer
 	font-size font-size-normal
+	transition 250ms
 	lost-column 4/12 12 0
 	height 100vh
 	overflow auto
