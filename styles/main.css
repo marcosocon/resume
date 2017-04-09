@@ -256,6 +256,11 @@ th {
 .drawer:nth-child(12n + 1) {
   clear: both;
 }
+@media only screen and (max-width: 768px) {
+  .drawer {
+    font-size: 0.6rem;
+  }
+}
 @media only screen and (max-width: 480px) {
   .drawer {
     width: calc(99.9% * 1/1);
@@ -278,99 +283,58 @@ th {
     clear: both;
   }
 }
-.drawer .profile {
-  background-color: #f0f0f0;
-  text-align: center;
+.lower-section {
+  background-color: #fafafa;
 }
-.drawer .profile h1 {
-  text-transform: uppercase;
-  margin-bottom: 0;
+.lower-section ul.links {
+  margin: 0 0 3rem 0;
+  padding: 0;
+  list-style: none;
 }
-.drawer .profile h2.role {
-  color: #646261;
-  margin-top: 0.1rem;
+.lower-section ul.links li {
+  cursor: pointer;
+  padding: 20px;
+  border: 1px solid #dad9da;
 }
-.drawer .profile .picture {
+.lower-section ul.links li a {
+  font-size: 1rem;
   position: relative;
-}
-.drawer .profile .picture img {
-  width: 65%;
-  border-radius: 50%;
-  margin: 4.5rem 18% 2rem;
-}
-.drawer .profile .picture .countryflag {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 14%;
-  border: 0.5rem solid #f0f0f0;
-}
-.drawer .profile .country {
-  font-size: 0.8rem;
-  position: relative;
-  color: #646261;
-  font-weight: normal;
-  padding-left: 1.5rem;
-  font-style: italic;
   display: inline-block;
-  margin-top: 1rem;
-  font-weight: 100;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem;
+  padding-left: calc(11% + 4rem);
+  padding-right: 5px;
+  color: #646261;
+  font-weight: 700;
 }
-.drawer .profile .country:before {
+@media only screen and (max-width: 768px) {
+  .lower-section ul.links li a {
+    font-size: 0.6rem;
+  }
+}
+.lower-section ul.links li a:before {
   content: "";
   position: absolute;
-  left: 0;
-  top: -0.1rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-image: url("../images/country.png");
+  left: 11%;
+  top: 0.9rem;
+  width: 2rem;
+  height: 2rem;
   background-repeat: no-repeat;
+  background-size: contain;
 }
-.drawer .profile .cells {
-  height: 80px;
+.lower-section ul.links li a.aboutme:before {
+  background-image: url("../images/aboutme.png");
 }
-.drawer .profile .cells:before {
-  content: '';
-  display: table;
+.lower-section ul.links li a.education:before {
+  background-image: url("../images/education.png");
 }
-.drawer .profile .cells:after {
-  content: '';
-  display: table;
-  clear: both;
+.lower-section ul.links li a.work:before {
+  background-image: url("../images/experience.png");
 }
-.drawer .profile .cells .cell {
-  padding: 20px 0;
-  height: 100%;
-  width: calc(99.9% * 1/3);
-  box-sizing: border-box;
-  border-right: 1px solid #dad9da;
-  border-top: 1px solid #dad9da;
-  border-bottom: 1px solid #dad9da;
-  text-align: center;
-}
-.drawer .profile .cells .cell:nth-child(1n) {
-  float: left;
-  margin-right: 0;
-  clear: none;
-}
-.drawer .profile .cells .cell:last-child {
-  margin-right: 0;
-}
-.drawer .profile .cells .cell:nth-child(3n) {
-  margin-right: 0;
-  float: right;
-}
-.drawer .profile .cells .cell:nth-child(3n + 1) {
-  clear: both;
-}
-.drawer .profile .cells .cell span {
-  vertical-align: middle;
-}
-.drawer .profile .cells .cell span strong {
-  font-size: 1rem;
-}
-.drawer .profile .cells .cell:last-child {
-  border-right: none;
+.lower-section ul.links li a.skills:before {
+  background-image: url("../images/skills.png");
 }
 .main-content {
   font-size: 1rem;
@@ -394,6 +358,11 @@ th {
 }
 .main-content:nth-child(12n + 1) {
   clear: both;
+}
+@media only screen and (max-width: 768px) {
+  .main-content {
+    font-size: 0.8rem;
+  }
 }
 @media only screen and (max-width: 480px) {
   .main-content {
@@ -541,61 +510,118 @@ th {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.lower-section {
-  background-color: #fafafa;
+.profile {
+  background-color: #f0f0f0;
+  text-align: center;
 }
-.lower-section ul.links {
-  margin: 0 0 3rem 0;
-  padding: 0;
-  list-style: none;
+.profile h1 {
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
-.lower-section ul.links li {
-  cursor: pointer;
-  padding: 20px;
-  border: 1px solid #dad9da;
-}
-.lower-section ul.links li a {
-  position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-  text-decoration: none;
-  width: 100%;
-  padding: 1rem;
-  padding-left: calc(11% + 4rem);
-  padding-right: 5px;
+.profile h2.role {
   color: #646261;
-  font-size: 1rem;
-  font-weight: 700;
+  margin-top: 0.1rem;
 }
-.lower-section ul.links li a:before {
+.profile .picture {
+  position: relative;
+}
+.profile .picture img {
+  width: 65%;
+  border-radius: 50%;
+  margin: 4.5rem 18% 2rem;
+}
+.profile .picture .countryflag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 14%;
+  border: 0.5rem solid #f0f0f0;
+}
+.profile .country {
+  font-size: 0.8rem;
+  position: relative;
+  color: #646261;
+  font-weight: normal;
+  padding-left: 1.5rem;
+  font-style: italic;
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 100;
+}
+.profile .country:before {
   content: "";
   position: absolute;
-  left: 11%;
-  top: 0.9rem;
-  width: 2rem;
-  height: 2rem;
+  left: 0;
+  top: -0.1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../images/country.png");
   background-repeat: no-repeat;
-  background-size: contain;
 }
-.lower-section ul.links li a.aboutme:before {
-  background-image: url("../images/aboutme.png");
+.profile .cells {
+  height: 80px;
 }
-.lower-section ul.links li a.education:before {
-  background-image: url("../images/education.png");
+.profile .cells:before {
+  content: '';
+  display: table;
 }
-.lower-section ul.links li a.work:before {
-  background-image: url("../images/experience.png");
+.profile .cells:after {
+  content: '';
+  display: table;
+  clear: both;
 }
-.lower-section ul.links li a.skills:before {
-  background-image: url("../images/skills.png");
+.profile .cells .cell {
+  padding: 20px 0;
+  height: 100%;
+  width: calc(99.9% * 1/3);
+  box-sizing: border-box;
+  border-right: 1px solid #dad9da;
+  border-top: 1px solid #dad9da;
+  border-bottom: 1px solid #dad9da;
+  text-align: center;
+}
+.profile .cells .cell:nth-child(1n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+.profile .cells .cell:last-child {
+  margin-right: 0;
+}
+.profile .cells .cell:nth-child(3n) {
+  margin-right: 0;
+  float: right;
+}
+.profile .cells .cell:nth-child(3n + 1) {
+  clear: both;
+}
+.profile .cells .cell span {
+  vertical-align: middle;
+}
+.profile .cells .cell span strong {
+  font-size: 1rem;
+}
+.profile .cells .cell:last-child {
+  border-right: none;
 }
 footer.footer {
   box-sizing: border-box;
   padding: 8%;
   font-size: 1rem;
 }
+@media only screen and (max-width: 992px) {
+  footer.footer {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer.footer {
+    font-size: 0.4rem;
+  }
+}
 @media only screen and (max-width: 480px) {
   footer.footer {
+    font-size: 0.8rem;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -627,6 +653,13 @@ footer.footer ul li a:before {
   height: 1.2rem;
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media only screen and (max-width: 768px) {
+  footer.footer ul li a:before {
+    width: 1rem;
+    height: 1rem;
+    top: 0.1rem;
+  }
 }
 footer.footer ul li a.mail:before {
   background-image: url("../images/mail.png");
