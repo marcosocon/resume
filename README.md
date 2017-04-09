@@ -35,4 +35,6 @@ For example:
   </div>
 ```
 
+**Check it live [here](https://marcosocon.github.io/resume)**
+
 ###### Please fork this repository and commit each step of your process.
