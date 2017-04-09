@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 	rupture = require('rupture');
 	jade = require('gulp-jade'),
 	gulputil = require('gulp-util'),
-	ghPages = require('gulp-gh-pages'),
+	githubPages = require('gulp-gh-pages'),
 	browserSync = require('browser-sync').create();
 
 gulp.task('default', ['build-all'], function () {
@@ -23,6 +23,10 @@ gulp.task('default', ['build-all'], function () {
 	gulp.watch('src/**/*.jade', ['templates']);
 	gulp.watch('src/scripts/**/*.coffee', ['scripts']);
 	gulp.watch('src/styles/*.styl', ['styles']);
+});
+
+gulp.task('publish', function(){
+	return gulp.src('./public/**/*').pipe(githubPages());
 });
 
 gulp.task('build-all', ['styles', 'templates', 'scripts', 'imagemin']);
