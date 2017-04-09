@@ -323,7 +323,7 @@ th {
   top: -0.1rem;
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("/images/country.png");
+  background-image: url("../images/country.png");
   background-repeat: no-repeat;
 }
 .drawer .profile .cells {
@@ -510,7 +510,7 @@ th {
   width: 1.5rem;
   top: 1.39rem;
   height: 1.5rem;
-  background-image: url("/images/red-marker.png");
+  background-image: url("../images/red-marker.png");
   background-repeat: no-repeat;
 }
 .main-content .places span.visited:before {
@@ -519,7 +519,7 @@ th {
   left: 0;
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("/images/blue-marker.png");
+  background-image: url("../images/blue-marker.png");
   background-repeat: no-repeat;
 }
 .main-content .skillset li {
@@ -537,7 +537,7 @@ th {
   top: -0.2rem;
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("/images/check.png");
+  background-image: url("../images/check.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -578,16 +578,16 @@ th {
   background-size: contain;
 }
 .lower-section ul.links li a.aboutme:before {
-  background-image: url("/images/aboutme.png");
+  background-image: url("../images/aboutme.png");
 }
 .lower-section ul.links li a.education:before {
-  background-image: url("/images/education.png");
+  background-image: url("../images/education.png");
 }
 .lower-section ul.links li a.work:before {
-  background-image: url("/images/experience.png");
+  background-image: url("../images/experience.png");
 }
 .lower-section ul.links li a.skills:before {
-  background-image: url("/images/skills.png");
+  background-image: url("../images/skills.png");
 }
 footer.footer {
   box-sizing: border-box;

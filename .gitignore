@@ -1,3 +1,4 @@
 .tmp
 .editorconfig
-node_modules
+/node_modules
+.publish
