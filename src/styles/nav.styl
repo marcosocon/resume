@@ -13,6 +13,7 @@
 			border border-setup
 
 			a
+				font-size font-size-big
 				position relative
 				display inline-block
 				box-sizing border-box
@@ -22,8 +23,10 @@
 				padding-left "calc(%s + 4rem)" % drawer-space
 				padding-right 5px
 				color color-primary
-				font-size font-size-big
 				font-weight 700
+
+				+below(768px)
+					font-size font-size-small
 
 				&:before
 					content ""

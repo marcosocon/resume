@@ -256,6 +256,11 @@ th {
 .drawer:nth-child(12n + 1) {
   clear: both;
 }
+@media only screen and (max-width: 768px) {
+  .drawer {
+    font-size: 0.6rem;
+  }
+}
 @media only screen and (max-width: 480px) {
   .drawer {
     width: calc(99.9% * 1/1);
@@ -292,6 +297,7 @@ th {
   border: 1px solid #dad9da;
 }
 .lower-section ul.links li a {
+  font-size: 1rem;
   position: relative;
   display: inline-block;
   box-sizing: border-box;
@@ -301,8 +307,12 @@ th {
   padding-left: calc(11% + 4rem);
   padding-right: 5px;
   color: #646261;
-  font-size: 1rem;
   font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .lower-section ul.links li a {
+    font-size: 0.6rem;
+  }
 }
 .lower-section ul.links li a:before {
   content: "";
@@ -348,6 +358,11 @@ th {
 }
 .main-content:nth-child(12n + 1) {
   clear: both;
+}
+@media only screen and (max-width: 768px) {
+  .main-content {
+    font-size: 0.8rem;
+  }
 }
 @media only screen and (max-width: 480px) {
   .main-content {
@@ -594,8 +609,19 @@ footer.footer {
   padding: 8%;
   font-size: 1rem;
 }
+@media only screen and (max-width: 992px) {
+  footer.footer {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer.footer {
+    font-size: 0.4rem;
+  }
+}
 @media only screen and (max-width: 480px) {
   footer.footer {
+    font-size: 0.8rem;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -627,6 +653,13 @@ footer.footer ul li a:before {
   height: 1.2rem;
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media only screen and (max-width: 768px) {
+  footer.footer ul li a:before {
+    width: 1rem;
+    height: 1rem;
+    top: 0.1rem;
+  }
 }
 footer.footer ul li a.mail:before {
   background-image: url("../images/mail.png");

@@ -3,7 +3,13 @@ footer.footer
 	padding 8%
 	font-size font-size-big
 
+	+below(992px)
+		font-size font-size-small
+	+below(600px)
+		font-size font-size-tiny
+
 	+below(480px)
+		font-size font-size-normal
 		position absolute
 		bottom 0
 		left 0
@@ -37,6 +43,11 @@ footer.footer
 					height 1.2rem
 					background-repeat no-repeat
 					background-size contain
+
+					+below(768px)
+						width 1rem
+						height 1rem
+						top 0.1rem
 
 				&.mail:before
 					background-image url('../images/mail.png')
